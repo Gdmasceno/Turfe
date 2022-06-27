@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container" class="container">
+        <img src="fenos.png" alt="" width="100px">
+        <div class="texto">Insira a quantidade de cavalos que participarão da corrida</div>
+        <input id="quantidadeCavalos" type="number" placeholder="Insira a quantidade aqui" min="2" max="6" style="width: 230px">
+        <button onclick="cadastrar_qtdCavalo()">PRÓXIMO</button>
+    </div>
+
+
+
+    <div id="container2" class="container" style="display: none;">
+        <img src="fenos.png" alt="" width="100px">
+        <div class="texto">Insira o nome dos cavalos que participarão</div>
+        <div class="cavalos">
+            <div id="insertC" class="cavalo">
+                <img src="cavalos.png" alt="">
+                <input id="nomeCavalo" class="nome" type="text" placeholder="Digite aqui...">
+                <img class="band" src="bandeira-de-chegada.png" alt="">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="btni" onclick="cadastrar_nomeCavalo()">INSERIR</button>
+            <button id="btnp" onclick="proximo2()" style="display: none;">PRÓXIMO</button>
+        </div>
+    </div>
+
+    <div id="container3" style="display: none;">
+        CAVALOS QUE ESTÃO PARTICIPANDO <br> <br>
+        <span id="cavalinhos" style="color: rgb(29, 29, 29);"></span>
+    </div>
+
+    <div id="container4" class="container" style="display: none;">
+        <img src="fenos.png" alt="" width="100px">
+        <div class="texto">Insira a quantidade do turfe</div>
+        <input id="qtdTurfe" type="number" placeholder="Insira a quantidade aqui">
+        <button onclick="cadastrar_qtdTurfe()">IR PARA CORRIDA</button>
+    </div>
+
+    <div class="up">
+        <div id="container5" class="container" style="display: none;">
+            <!-- <img src="fenos.png" alt="" width="100px"> -->
+            <div id="venced" class="vencedores" style="display: none;">
+                <div class="segundo">
+                    <div class="c1">
+                        <img src="cavalos.png" alt="">
+                        <div id="nomeseg" class="nome">nome</div>
+                    </div>
+                    <div class="barra">2</div>
+                </div>
+                <div class="primeiro">
+                    <div class="c2">
+                        <img src="cavalos.png" alt="">
+                        <div id="nomeven" class="nome">nome</div>
+                    </div>
+                    <div class="barra">1</div>
+                </div>
+                <div id="barraterc" class="terceiro">
+                    <div class="c3">
+                        <img src="cavalos.png" alt="">
+                        <div id="nometerc" class="nome">nome</div>
+                    </div>
+                    <div class="barra">3</div>
+                </div>
+            </div>
+            <button id="pp" onclick="rodada()">DAR PARTIDA</button>
+            <span id="dif" class="dif"></span>
+        </div>
+    </div>
+
+    <div id="container7" class="container" style="display: none;">
+        <!-- <img src="fenos.png" alt="" width="100px"> -->
+        <div id="venced2" class="vencedores">
+            <div class="segundo">
+                <div class="c1">
+                    <img src="cavalos.png" alt="">
+                    <div id="nomeseg2" class="nome">nome</div>
+                </div>
+                <div class="barra">2</div>
+            </div>
+            <div class="primeiro">
+                <div class="c2">
+                    <img src="trofeu.png" alt="">
+                    <div id="nomeven2" class="nome">nome</div>
+                </div>
+                <div class="barra">1</div>
+            </div>
+            <div id="barraterc2" class="terceiro">
+                <div class="c3">
+                    <img src="cavalos.png" alt="">
+                    <div id="nometerc2" class="nome">nome</div>
+                </div>
+                <div class="barra">3</div>
+            </div>
+        </div>
+        <span class="dif">O VENCEDOR FOI O CAVALO <b id="vencedorrr"></b>!!!!</span>
+    </div>
+
+    <div id="container6" style="display: none;">
+   <span id="turfinho"></span></div>
+
+    <!-- <div class="container">
+        <img src="fenos.png" alt="" width="100px">
+        <div class="texto">Temos três cavalos, sete rodadas e apenas um <b>vencedor</b></div>
+        <button>DAR PARTIDA</button>
+        <div class="cavalos">
+            <div class="cavalo">
+                <img src="cavalos.png" alt="">
+                <span>CAVALO 1</span>
+                <img class="band" src="bandeira-de-chegada.png" alt="">
+            </div>
+
+            <div class="cavalo">
+                <img src="cavalos.png" alt="">
+                <span>CAVALO 2</span>
+                <img class="band" src="bandeira-de-chegada.png" alt="">
+            </div>
+
+            <div class="cavalo">
+                <img src="cavalos.png" alt="">
+                <span>CAVALO 3</span>
+                <img class="band" src="bandeira-de-chegada.png" alt="">
+            </div>
+
+        </div>
+    </div> -->
+</body>
+
+</html>
+
+<script>
+    function proximo() {
+        container.style.display = 'none';
+        container2.style.display = 'flex';
+        container3.style.display = 'flex';
+    }
+
+    function proximo2(){
+        container2.style.display = 'none';
+        container3.style.display = 'none';
+        container4.style.display = 'flex';
+    }
+
+    function proximo3(){
+        container4.style.display = 'none';
+        container5.style.display = 'flex';
+        container6.style.display = 'flex';
+        // container7.style.display = 'flex';
+    }
+</script>
+
+<script src="jogo.js"></script>

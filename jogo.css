@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo.png');
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+.cavalos{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cavalo{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cavalo span{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+}
+
+.cavalo img{
+    width: 70px;
+}
+
+.band{
+    margin-left: 100px;
+}
+
+button{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 185, 93);
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+.cavalo input{
+    outline: none;
+    border: none;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 40px;
+}
+
+.buttons button{
+    margin-left: 20px;
+}
+
+#container3{
+    background-color: white;
+    margin-top: 20px;
+    width: 500px;
+    border-radius: 20px;
+    min-height: 100px;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#container6{
+    background-color: white;
+    margin-top: 20px;
+    width: 500px;
+    border-radius: 20px;
+    min-height: 100px;
+    max-height: 250px;
+    overflow: auto;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.nome{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+.vencedores{
+    width: 100%;
+    height: 200px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+}
+
+.vencedores .segundo{
+    width: 120px;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.segundo .barra{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 185, 93);
+}
+
+.segundo .c1{
+    width: 100%;
+    height: 60%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeiro .barra{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(253, 171, 65);
+
+}
+
+.primeiro .c2{
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vencedores img{
+    width: 50px;
+}
+
+.vencedores .primeiro{
+    width: 120px;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.vencedores .terceiro{
+    width: 120px;
+    height: 100%;
+    /* background-color: purple; */
+}
+
+.terceiro .barra{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(255, 207, 144);
+}
+
+.terceiro .c3{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container7 span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+.dif{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 8px;
+}

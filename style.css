@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo.png');
+    background-size: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.main .andando{
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    animation: andando 10s linear infinite;
+}
+
+
+.main .titulo{
+    font-size: 100px;
+    color: white;
+    font-family: 'Alpha Beta BRK';
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main button{
+    width: 300px;
+    height: 60px;
+    font-family: 'Alpha Beta BRK';
+    font-size: 55px;
+    margin-top: 60px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+}
+
+.main button img{
+    margin-right: 10px;
+}
+
+.main button:hover{
+    color: rgb(234, 255, 142);
+}
+
+.main .texto{
+    font-size: 30px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.main .cara{
+    margin-top: 50px;
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+}
+
+@keyframes andando{
+    from{
+    right: 1400px;
+    }
+
+    to{
+        right: -300px;
+    }
+}
